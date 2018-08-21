@@ -2,7 +2,17 @@
 
 > Nuxt.js project
 
-## Build Setup
+> Added Bulma, Sassloading and Materialize Icons as dependencies.
+
+## Important
+
+```
+# remove git locally and re-iniate a new git repository
+$ rm -rf .git & rm -rf .gitignore
+$ git init
+```
+
+### Build Setup
 
 ``` bash
 # install dependencies
