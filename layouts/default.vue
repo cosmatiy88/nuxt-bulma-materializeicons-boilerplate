@@ -1,5 +1,6 @@
 <template>
   <div>
+    <navbar/>
     <nuxt/>
   </div>
 </template>
@@ -51,3 +52,9 @@ html {
 }
 </style>
 
+<script>
+import Navbar from "../components/Navbar";
+export default {
+  components: {Navbar}
+}
+</script>

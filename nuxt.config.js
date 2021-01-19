@@ -2,6 +2,7 @@ module.exports = {
   /*
   ** Headers of the page
   */
+  telemerty: false,
   head: {
     title: 'nuxt-bulma-fontawesome-boilerplate',
     meta: [
@@ -16,7 +17,8 @@ module.exports = {
   modules: [
     // provide path to the file with resources
     ['nuxt-sass-resources-loader', './assets/main.scss'],
-    'nuxt-material-design-icons'
+    'nuxt-material-design-icons',
+    '@nuxtjs/axios'
   ],
   /*
   ** Customize the progress bar color
@@ -30,15 +32,7 @@ module.exports = {
     ** Run ESLint on save
     */
     extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
       }
     }
-  }
 }
 
